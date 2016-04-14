@@ -518,6 +518,44 @@ PLUGIN STYLES
 /*********************
 HOMEPAGE STYLES
 *********************/
+
+	.off-canvas-content {
+		@include css-gradient(#08A9BD,#056571);
+	}
+
 #home-hero {
-	background-color:#444;
+	text-align:center;
 }
+/*********************
+NAVBAR STYLES
+*********************/
+.top-bar {
+	align-items:stretch;
+	ul {
+			background:none;	
+			display:flex;
+			align-items:stretch;
+			li {
+				display:flex;
+				a {
+					align-items:center !important;
+					color:#ffffff;
+				}
+			}
+	}
+	padding:0;
+	svg {
+		height:4rem;
+	}
+	.top-bar-right {
+	 	display:flex;
+	 	align-items:stretch;
+	 }
+	
+}
+ .menu > li > a {
+ 	padding: 0.7rem 2rem;
+ }
+ .top-bar .is-stuck {
+ 	background-color:rgba(0,0,0,0.50);
+ }

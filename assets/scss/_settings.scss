@@ -41,6 +41,7 @@
 //  36. Top Bar
 
 @import '../../vendor/foundation-sites/scss/util/util';
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
 
 // 1. Global
 // ---------
@@ -72,6 +73,8 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $print-transparent-backgrounds: true;
+$navbar-color: rgba(0,0,0,0.50);
+$navbar-color-light: rgba(0,0,0,0.35);
 
 @include add-foundation-colors;
 
@@ -102,7 +105,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family:'Abril Fatface', cursive;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -124,7 +127,7 @@ $header-sizes: (
     'h6': 16,
   ),
 );
-$header-color: inherit;
+$header-color: $white;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
@@ -380,7 +383,7 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: map-get($foundation-palette, primary);
+$menu-item-background-active: $navbar-color-light;
 $menu-icon-spacing: 0.25rem;
 
 // 23. Meter
@@ -559,7 +562,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $navbar-color;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
